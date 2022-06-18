@@ -1,7 +1,4 @@
-const { viewAllDepartments, 
-        viewAllRoles, 
-        viewAllEmployees } = require('./lib/queries');
+const { mainMenu, logo } = require('./src/menu');
 
-viewAllDepartments();
-viewAllRoles();
-viewAllEmployees();
+console.log(logo);
+mainMenu();
