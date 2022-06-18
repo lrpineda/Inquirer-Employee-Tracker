@@ -220,7 +220,6 @@ const deleteRolePrompt = async () => {
     mainMenu();
 };
 
-
 // Delete role function
 const deleteEmployeePrompt = async () => {
     const employees = await getEmployees();
@@ -237,7 +236,6 @@ const deleteEmployeePrompt = async () => {
     deleteEmployee(employeeId);
     mainMenu();
 };
-
 
 // Main menu function
 const mainMenu = () => {
