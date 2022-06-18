@@ -119,6 +119,7 @@ const addDepartmentPrompt = async () => {
     addDepartment(name);
     mainMenu();
 };
+
 // Add role function
 const addRolePrompt = async () => {
     const departments = await getDepartments();
@@ -165,6 +166,7 @@ const addRolePrompt = async () => {
     addRole(newRole);
     mainMenu();
 };
+
 // Update employee role function
 const updateEmployeeRolePrompt = async () => {
     const employees = await getEmployees();
@@ -189,6 +191,7 @@ const updateEmployeeRolePrompt = async () => {
     updateEmployeeRole(employeeId, roleId);
     mainMenu();
 };
+
 // Delete department function
 const deleteDepartmentPrompt = async () => {
     const departments = await getDepartments();
@@ -267,7 +270,8 @@ const mainMenu = () => {
             switch (choice) {
                 case "View All Departments":
                     displayDepartmentsTable();
-                    return mainMenu();
+                    mainMenu();
+                    break;
                 case "View All Roles":
                     displayRolesTable();
                     return mainMenu();
